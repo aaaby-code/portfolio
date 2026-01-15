@@ -134,6 +134,28 @@
             position: relative;
         }
 
+        .hero-image {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            margin: 0 auto 2rem;
+            overflow: hidden;
+            border: 4px solid var(--bg-secondary);
+            box-shadow: 0 0 0 1px var(--border-color), 0 20px 60px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+        }
+
+        .hero-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 0 1px var(--border-color), 0 30px 80px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
         .hero-badge {
             display: inline-flex;
             align-items: center;
@@ -512,6 +534,9 @@
     <div class="container">
         <!-- Hero Section -->
         <section class="hero fade-in">
+            <div class="hero-image">
+                <img src="profile-pic.png" alt="aaaby code">
+            </div>
             <div class="hero-badge">
                 <span class="status-dot"></span>
                 Available for new projects
